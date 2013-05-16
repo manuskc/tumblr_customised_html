@@ -1,5 +1,5 @@
-tumble_customised_html
-======================
+Tumblr customised theme
+============================
 
 This is my customizations to a tumblr theme named Ashley.
 
