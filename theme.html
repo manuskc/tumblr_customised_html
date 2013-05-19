@@ -6,16 +6,13 @@
       For: Tumblr  [http://tumblr.com/]
       Terms: Protected under Creative Commons.
       Customized by : Manu C [ http://manuskc.com ]
-  
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  	<!-- Custom Variables -->
+		<!-- Custom Variables -->
 		<meta name="image:Logo" content=""/>
 		<meta name="text:Colophon" content="Ashley theme by Jxnblk"/>
-		<meta name="text:GoogleWebFont" content="Gentium Book Basic"/>
-		<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
 		<meta name="color:Background" content="#fff"/>
     <meta name="color:Text" content="#444"/>
     <meta name="color:Link" content="#099"/>
@@ -25,7 +22,8 @@
 		<link rel="apple-touch-icon" href="{PortraitURL-128}">
 		<link rel="alternate" type="application/rss+xml" href="{RSS}">
     {block:IfGoogleWebFont}
-      <link href='http://fonts.googleapis.com/css?family={text:GoogleWebFontURL}' rel='stylesheet' type='text/css'>
+      <!-- For prettyprint-->
+      <link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"></link>
     {/block:IfGoogleWebFont}
     <meta name=viewport content='width=device-width, initial-scale=1'>
 		<!--[if lt IE 9]>
@@ -41,10 +39,10 @@
       body {
         color: {color:Text};
         background: {color:Background};
-        font-family: '{text:GoogleWebFont}', Georgia, serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 100%;
         line-height: 1.5;
-        font-weight: 400;
+        font-weight: 300;
       }
       
       
@@ -210,8 +208,7 @@
       .quote blockquote {
         padding: 0;
         border: none;
-        font-style: italic;
-        text-shadow: #999 0.2em 0.2em 0.4em;
+        text-shadow: #999 0.2em 0.2em 1em;
       }
       
       .quote .source {
@@ -355,6 +352,11 @@
       
       .center {
         text-align: center;
+      }
+      
+      body pre code {
+          font-size: 14px;
+          background: #efe;
       }
 		  
 			{CustomCSS}
@@ -528,7 +530,7 @@
   		</ul>
 		{/block:HasPages}
 		{block:AskEnabled}<a href="/ask">{AskLabel}</a>{/block:AskEnabled}
-        {block:IfColophon}<p class="center small">{text:Colophon} - customized with love by <a href="http://manuskc.com">manuskc</a><br/>custom html available on <a href="http://github.com/manuskc">github</a></p>{block:IfColophon}
+        {block:IfColophon}<p class="center small">{text:Colophon} - customized with love by <a href="http://manuskc.com">manuskc</a><br/>custom html available on <a href="https://github.com/manuskc/tumblr_customised_html">github</a></p>{block:IfColophon}
 	</footer>
 	
 </body>
